@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/filehound/test*.
+.*/node_modules/stylelint/lib*.
+.*/node_modules/file-js/*.
+
+[include]
+.*/src/.*
+
+[libs]
+
+[options]
+module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/utils/flow/CSSModule.js.flow'
+module.name_mapper='^\(.*\)\.scss$' ->  '<PROJECT_ROOT>/utils/flow/CSSModule.js.flow'
+module.name_mapper='^config$'->'<PROJECT_ROOT>/src/config/env/dev.js'

@@ -25,10 +25,10 @@ const config = Object.assign({}, baseConfig, {
     new FlowStatusWebpackPlugin({
       failOnError: false,
     }),
-    new StyleLintPlugin({
-      configFile: '.stylelintrc.js',
-      files: ['./src/**/*.scss'],
-    }),
+    // new StyleLintPlugin({
+    //   configFile: '.stylelintrc.js',
+    //   files: ['./src/**/*.scss'],
+    // }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       minify: {

@@ -11,4 +11,5 @@
 [options]
 module.name_mapper='^\(.*\)\.css$' -> '<PROJECT_ROOT>/utils/flow/CSSModule.js.flow'
 module.name_mapper='^\(.*\)\.scss$' ->  '<PROJECT_ROOT>/utils/flow/CSSModule.js.flow'
-module.name_mapper='^config$'->'<PROJECT_ROOT>/src/config/env/dev.js'
+module.name_mapper='^ApiService$'->'<PROJECT_ROOT>/src/redux/store/ApiService.js'
+module.name_mapper='^config$'->'<PROJECT_ROOT>/src/config/base.js'

@@ -20,7 +20,7 @@ const appDiv = () => {
   return appDivVar;
 };
 
-const routerPath = getAttr(appDiv(), 'data-router-path', '');
+const routerPath = getAttr(appDiv(), 'data-router-path', '/');
 
 const base: {
   commonTiming: number,

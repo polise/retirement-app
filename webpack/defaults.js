@@ -36,7 +36,6 @@ function getResolve(environment, includeFallback = false) {
     extensions: ['', '.js', '.jsx'],
     alias: {
       config: `${srcPath}/config/base.js`,
-      ApiService: `${srcPath}/redux/store/ApiService`,
     },
   };
 

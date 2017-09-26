@@ -1,12 +1,13 @@
 import yargs from 'yargs';
 
 import dev from './webpack/env/dev';
-import test from './webpack/env/test';
 
 const args = yargs.argv;
 
 function environmentChooser(env) {
+  console.log('got into babel webpack config');
   if (env === 'dev') {
+    console.log('returning dev');
     return dev;
   }
 

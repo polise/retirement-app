@@ -25,10 +25,10 @@ const config = Object.assign({}, baseConfig, {
     new FlowStatusWebpackPlugin({
       failOnError: false,
     }),
-    // new StyleLintPlugin({
-    //   configFile: '.stylelintrc.js',
-    //   files: ['./src/**/*.scss'],
-    // }),
+    new StyleLintPlugin({
+      configFile: '.stylelintrc.js',
+      files: ['./src/**/*.scss'],
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       minify: {
@@ -57,14 +57,14 @@ const config = Object.assign({}, baseConfig, {
   },
 });
 
+
 // Add needed loaders to the defaults here
 config.module.loaders.push({
   test: /\.(js|jsx)$/,
   loaders: ['react-hot', 'babel'],
   include: [].concat(
     config.additionalPaths,
-    [path.join(__dirname, '/../../src')],
-  ),
+    [path.join(__dirname, '/../../src')]),
 });
 
 export default config;

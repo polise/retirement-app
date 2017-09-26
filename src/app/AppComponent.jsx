@@ -1,10 +1,11 @@
 // @flow
 import React from 'react';
+import './AppComponent.scss';
 
 const AppComponent = () => (
-  <div>
+  <h1 className="app">
     Hello, World!
-  </div>
+  </h1>
 );
 
 export default AppComponent;
